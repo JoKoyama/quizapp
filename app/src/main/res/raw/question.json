@@ -1,0 +1,84 @@
+
+[
+  {
+    "question":"Isekai is fantasy in Japanese",
+    "answer" : "f",
+    "option1" : "n",
+    "option2" :"n",
+    "option3":"n",
+    "option4":"n"
+  },
+  {
+    "question":"King of Skull Servant’s Max Attack is 5000",
+    "answer": "f",
+    "option1" : "n",
+    "option2" :"n",
+    "option3":"n",
+    "option4":"n"
+  },
+  {
+    "question":"what is the lowest life points you can drop to without losing in yu-gi-oh the card game",
+    "answer":"1",
+    "option1":"1",
+    "option2":"10",
+    "option3" : "20",
+    "option4": "100"
+  },
+  {
+    "question":"Light is made up of ",
+    "answer":"both",
+    "option1":"particles",
+    "option2" : "rays",
+    "option3" : "both" ,
+    "option4": "neither"
+  },
+  {
+    "question":"4K resolution is 4 times the resolution of 1080p",
+    "answer":"t",
+    "option1" : "n",
+    "option2" :"n",
+    "option3":"n",
+    "option4":"n"
+  },
+  {
+    "question":"What percentage of the earth's water is Theoretically consumable" ,
+    "answer":"2.5",
+    "option1":"2.5",
+    "option2":"3",
+    "option3":"5",
+    "option4": "1.2"
+  },
+  {
+    "question":"How many terabytes in a petabyte?",
+    "answer":"1000",
+    "option1":"10000",
+    "option2":"10000000",
+    "option3":"1000",
+    "option4": "10"
+  },
+  {
+    "question":"What console saw the release of “The World Ends With You”?",
+    "answer":"Nintendo DS",
+    "option1":"Nintendo Switch",
+    "option2":"Sony Playstation 4",
+    "option3":"Nintendo DS",
+    "option4": "Sony Playstation 2"
+  },
+  {
+    "question":"How many possible combinations are in a Master lock padlock?",
+    "answer":"64000",
+    "option1":"10000",
+    "option2":"9999",
+    "option3" :"64000",
+    "option4": "160000"
+  },
+  {
+    "question":"How many rounds can a mp7 with an extended magazine hold?",
+    "answer": "40",
+    "option1":"10",
+    "option2":"20",
+    "option3":"30",
+    "option4":"40"
+  }
+]
+

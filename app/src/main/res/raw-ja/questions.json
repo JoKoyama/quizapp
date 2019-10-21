@@ -1,0 +1,82 @@
+[
+  {
+    "question":"異世界はファンタジーである",
+    "answer": "t",
+    "option1": "n",
+    "option2":"n",
+    "option3":"n",
+    "option4":"n"
+  },
+  {
+    "question":"ワイトキングの最大攻撃力は5000である",
+    "answer":"f",
+    "option1": "n",
+    "option2":"n",
+    "option3":"n",
+    "option4":"n"
+  },
+  {
+    "question":"遊戯王のライフポイントの最小値はいくつ？",
+    "answer":"1",
+    "option1":"1",
+    "option2":"10",
+    "option3":"20",
+    "option4":"100"
+  },
+  {
+    "question":"光は何",
+    "answer":"両方",
+    "option1":"粒子",
+    "option2":"光線",
+    "option3":"両方" ,
+    "option4":"どちらでもない"
+  },
+  {
+    "question":"4KレゾはHDレゾの４倍である",
+    "answer":"t",
+    "option1":"n",
+    "option2":"n",
+    "option3":"n",
+    "option4":"n"
+  },
+  {
+    "question":"地球上の水の何パーセントは飲めるか？" ,
+    "answer":"2.5",
+    "option1":"2.5",
+    "option2":"3",
+    "option3":"5",
+    "option4": "1.2"
+  },
+  {
+    "question":"１ペタバイトに何テラバイトが含まれている？",
+    "answer":"1000",
+    "option1":"10000",
+    "option2":"10000000",
+    "option3":"1000",
+    "option4":"10"
+  },
+  {
+    "question":"「素晴らしきこの世界」はどのコンソールに初めて現れたか?",
+    "answer":"任天堂DS",
+    "option1":"任天堂スイッチ",
+    "option2":"ソニーPS4",
+    "option3":"任天堂DS",
+    "option4": "ソニーPS2"
+  },
+  {
+    "question":"マスターロックの最大組合せる数は何通り？",
+    "answer":"64000",
+    "option1":"10000",
+    "option2":"9999",
+    "option3":"64000",
+    "option4":"160000"
+  },
+  {
+    "question":"MP7は何弾マガジンに入る?",
+    "answer":"40",
+    "option1":"10",
+    "option2":"20",
+    "option3":"30",
+    "option4":"40"
+  }
+]

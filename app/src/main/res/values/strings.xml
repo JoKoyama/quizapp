@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">intentlearning</string>
+    <string name="question_number">Question number</string>
+    <string name="question">Question</string>
+    <string name="button1">option 1</string>
+    <string name="button3">option 3</string>
+    <string name="button2">option 2</string>
+    <string name="button4">option 4</string>
+    <string name="message">text</string>
+</resources>
