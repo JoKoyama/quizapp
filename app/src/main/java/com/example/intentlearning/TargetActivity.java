@@ -3,6 +3,7 @@ package com.example.intentlearning;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -11,6 +12,9 @@ import android.widget.TextView;
 
 import com.google.gson.Gson;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Arrays;
 import java.util.List;
 
@@ -22,6 +26,8 @@ public class TargetActivity extends AppCompatActivity {
     public Button option2;
     public Button option3;
     public Button option4;
+    private InputStream XmlFileInputStream = getResources().openRawResource(R.raw.question);
+    private String jsonString = readTextFile(XmlFileInputStream);
 
 
     @Override
@@ -29,7 +35,13 @@ public class TargetActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_target);
         wireWidgets();
-
+        // create a gson object
+        Gson gson = new Gson();
+        // read your json file into an array of questions
+        Question[] questions =  gson.fromJson(jsonString, Question[].class);
+        // convert your array to a list using the Arrays utility class
+        List<Question> questionList = Arrays.asList(questions);
+        // verify that it read everything properly
         //receive intent
         Intent lastIntent = getIntent();
         //open extras
@@ -46,6 +58,22 @@ public class TargetActivity extends AppCompatActivity {
         catch (InterruptedException e)
         {e.printStackTrace();}
     }
+    public String readTextFile(InputStream inputStream) {
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+        byte buf[] = new byte[1024];
+        int len;
+        try {
+            while ((len = inputStream.read(buf)) != -1) {
+                outputStream.write(buf, 0, len);
+            }
+            outputStream.close();
+            inputStream.close();
+        } catch (IOException e) {
+
+        }
+        return outputStream.toString();
+    }
 
     private void wireWidgets() {
 
@@ -57,19 +85,11 @@ public class TargetActivity extends AppCompatActivity {
         option3 = findViewById(R.id.button_target_option3);
         option4 = findViewById(R.id.button_target_option4);
     }
-    // create a gson object
-    Gson gson = new Gson();
-    // read your json file into an array of questions
-    Question[] questions =  gson.fromJson(jsonString, Question[].class);
-    // convert your array to a list using the Arrays utility class
-    List<Question> questionList = Arrays.asList(questions);
-    // verify that it read everything properly
-    Log.d(TAG, "onCreate: " + questionList.toString());
-
     @Override
     public void onClick(View view) {
         switch(view.getId()) {
             case R.id.button_target_option1: {
+
 
             }
             break;
@@ -93,5 +113,7 @@ public class TargetActivity extends AppCompatActivity {
             break;
         }
     }
+
+
 
 }

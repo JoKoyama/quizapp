@@ -1,5 +1,12 @@
 package com.example.intentlearning;
 
+import android.util.Log;
+
+import com.google.gson.Gson;
+
+import java.util.Arrays;
+import java.util.List;
+
 public class Question {
     private String question;
     private String answer;
@@ -7,14 +14,22 @@ public class Question {
     private String option2;
     private String option3;
     private String option4;
+    private boolean isTrueFalse;
+    private int questionNumber;
 
-    public Question(String question, String answer, String option1, String option2, String option3, String option4){
-        this.question = question;
+    public Question(List<Question> questionList){
+        this.question = question.getQuestion(questionList.get(questionNumber));
         this.answer = answer;
-        this.option1 = option1;
-        this.option2 = option2;
-        this.option3 = option3;
-        this.option4 = option4;
+        if (!option1.equals("n")){
+            this.option1 = option1;
+            this.option2 = option2;
+            this.option3 = option3;
+            this.option4 = option4;
+            isTrueFalse = false;
+        }
+        else{
+            isTrueFalse = true;
+        }
     }
 
     public String getQuestion() {
@@ -63,5 +78,13 @@ public class Question {
 
     public void setOption4(String option4) {
         this.option4 = option4;
+    }
+
+    public boolean isTrueFalse() {
+        return isTrueFalse;
+    }
+
+    public void setTrueFalse(boolean trueFalse) {
+        isTrueFalse = trueFalse;
     }
 }
