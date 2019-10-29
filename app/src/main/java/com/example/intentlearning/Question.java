@@ -15,21 +15,15 @@ public class Question {
     private String option3;
     private String option4;
     private boolean isTrueFalse;
-    private int questionNumber;
 
-    public Question(List<Question> questionList){
-        this.question = question.getQuestion(questionList.get(questionNumber));
-        this.answer = answer;
-        if (!option1.equals("n")){
-            this.option1 = option1;
-            this.option2 = option2;
-            this.option3 = option3;
-            this.option4 = option4;
-            isTrueFalse = false;
-        }
-        else{
-            isTrueFalse = true;
-        }
+
+ // make 2 constructors. 1 with all the instance variables
+    // 1 with no parameters
+    // method for checkAnswer
+
+
+    public Question(){
+
     }
 
     public String getQuestion() {
@@ -78,6 +72,15 @@ public class Question {
 
     public void setOption4(String option4) {
         this.option4 = option4;
+    }
+    public boolean checkAnswer(String inputAnswer){
+            if (inputAnswer.equals(answer)){
+                return true;
+            }
+            else{
+                return false;
+            }
+
     }
 
     public boolean isTrueFalse() {

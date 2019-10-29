@@ -1,4 +1,3 @@
-
 [
   {
     "question":"Isekai is fantasy in Japanese",
@@ -6,7 +5,8 @@
     "option1" : "n",
     "option2" :"n",
     "option3":"n",
-    "option4":"n"
+    "option4":"n",
+    "isTrueFalse":true
   },
   {
     "question":"King of Skull Servant’s Max Attack is 5000",
@@ -14,7 +14,8 @@
     "option1" : "n",
     "option2" :"n",
     "option3":"n",
-    "option4":"n"
+    "option4":"n",
+    "isTrueFalse":true
   },
   {
     "question":"what is the lowest life points you can drop to without losing in yu-gi-oh the card game",
@@ -22,7 +23,8 @@
     "option1":"1",
     "option2":"10",
     "option3" : "20",
-    "option4": "100"
+    "option4": "100",
+    "isTrueFalse":false
   },
   {
     "question":"Light is made up of ",
@@ -30,7 +32,8 @@
     "option1":"particles",
     "option2" : "rays",
     "option3" : "both" ,
-    "option4": "neither"
+    "option4": "neither",
+    "isTrueFalse":false
   },
   {
     "question":"4K resolution is 4 times the resolution of 1080p",
@@ -38,7 +41,8 @@
     "option1" : "n",
     "option2" :"n",
     "option3":"n",
-    "option4":"n"
+    "option4":"n",
+    "isTrueFalse":true
   },
   {
     "question":"What percentage of the earth's water is Theoretically consumable" ,
@@ -46,7 +50,8 @@
     "option1":"2.5",
     "option2":"3",
     "option3":"5",
-    "option4": "1.2"
+    "option4": "1.2",
+    "isTrueFalse":false
   },
   {
     "question":"How many terabytes in a petabyte?",
@@ -54,7 +59,8 @@
     "option1":"10000",
     "option2":"10000000",
     "option3":"1000",
-    "option4": "10"
+    "option4": "10",
+    "isTrueFalse":false
   },
   {
     "question":"What console saw the release of “The World Ends With You”?",
@@ -62,7 +68,8 @@
     "option1":"Nintendo Switch",
     "option2":"Sony Playstation 4",
     "option3":"Nintendo DS",
-    "option4": "Sony Playstation 2"
+    "option4": "Sony Playstation 2",
+    "isTrueFalse":false
   },
   {
     "question":"How many possible combinations are in a Master lock padlock?",
@@ -70,7 +77,8 @@
     "option1":"10000",
     "option2":"9999",
     "option3" :"64000",
-    "option4": "160000"
+    "option4": "160000",
+    "isTrueFalse":false
   },
   {
     "question":"How many rounds can a mp7 with an extended magazine hold?",
@@ -78,7 +86,8 @@
     "option1":"10",
     "option2":"20",
     "option3":"30",
-    "option4":"40"
+    "option4":"40",
+    "isTrueFalse":false
   }
 ]
 
