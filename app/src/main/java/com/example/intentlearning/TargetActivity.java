@@ -29,7 +29,7 @@ public class TargetActivity extends AppCompatActivity implements View.OnClickLis
     private int score;
     public Quiz quiz;
     public static final String TAG = "TargetActivity";
-
+    public static final String EXTRA_SCORE="score";
 
 
 
@@ -73,8 +73,11 @@ public class TargetActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     public void refreshDisplay() {
-        if (quiz.getProblemNumber() == quiz.questionAmount()){
-
+        if (quiz.getProblemNumber() >= quiz.questionAmount()){
+            Intent scoreIntent = new Intent(TargetActivity.this, Score.class);
+            scoreIntent.putExtra(EXTRA_SCORE,score);
+            startActivity(scoreIntent);
+            fileList();
         }
         buttonOption1.setVisibility(View.GONE);
         buttonOption2.setVisibility(View.GONE);
@@ -143,7 +146,8 @@ public class TargetActivity extends AppCompatActivity implements View.OnClickLis
                 else{
                     Toast.makeText(this,"incorrect",Toast.LENGTH_SHORT);
 
-                }                quiz.nextQuestion();
+                }
+                quiz.nextQuestion();
                 refreshDisplay();
             }
             break;
